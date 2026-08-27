@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { Mic, Paperclip, Phone, SendHorizontal, Video, ShieldCheck, ArrowLeft } from 'lucide-react'
+import { Mic, Paperclip, Phone, SendHorizontal, Video, ShieldCheck } from 'lucide-react'
 import { conversations as initialConversations, featuredProfiles } from '../data/mockData'
 
 interface Message {
