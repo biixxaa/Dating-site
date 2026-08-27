@@ -1,0 +1,80 @@
+import type { Conversation, Profile } from '../types'
+
+export const featuredProfiles: Profile[] = [
+  {
+    id: '1',
+    name: 'Ava',
+    age: 29,
+    city: 'Copenhagen',
+    bio: 'Design strategist who loves slow sunsets, deep talks, and private rooftop dinners.',
+    occupation: 'Creative Director',
+    interests: ['Design', 'Wine', 'Travel'],
+    languages: ['English', 'Danish'],
+    relationshipGoal: 'Long-term connection',
+    verified: true,
+    distance: 4,
+    online: true,
+    vibe: 'Confident, curious, and kind',
+    accent: 'From the first message to the first date',
+  },
+  {
+    id: '2',
+    name: 'Noah',
+    age: 32,
+    city: 'Berlin',
+    bio: 'Product leader with a soft spot for jazz, high-end coffee, and thoughtful banter.',
+    occupation: 'Product Lead',
+    interests: ['Music', 'Coffee', 'Cycling'],
+    languages: ['English', 'German'],
+    relationshipGoal: 'Intentional partnership',
+    verified: true,
+    distance: 8,
+    online: false,
+    vibe: 'Calm, grounded, and adventurous',
+    accent: 'Verified with private voice intro',
+  },
+  {
+    id: '3',
+    name: 'Mina',
+    age: 27,
+    city: 'Stockholm',
+    bio: 'Architect by day, night owl by night. Looking for a real spark with real standards.',
+    occupation: 'Architect',
+    interests: ['Art', 'Photography', 'Food'],
+    languages: ['English', 'Swedish'],
+    relationshipGoal: 'Committed relationship',
+    verified: true,
+    distance: 11,
+    online: true,
+    vibe: 'Elegant, witty, and direct',
+    accent: 'Goes live for voice and video on request',
+  },
+]
+
+export const conversations: Conversation[] = [
+  {
+    id: 'c1',
+    name: 'Ava',
+    role: 'Premium chooser',
+    preview: 'Your profile stood out immediately. Want to trade favorite city escapes?',
+    unread: 2,
+    online: true,
+    verified: true,
+  },
+  {
+    id: 'c2',
+    name: 'Mina',
+    role: 'Verified and open',
+    preview: 'I love the idea of a private dinner and a slow walk after.',
+    unread: 0,
+    online: false,
+    verified: true,
+  },
+]
+
+export const adminStats = [
+  { label: 'Verified members', value: '92.4%' },
+  { label: 'Active voice calls', value: '218' },
+  { label: 'Flagged content', value: '7' },
+  { label: 'Membership renewals', value: '89%' },
+]
