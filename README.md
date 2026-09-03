@@ -9,7 +9,6 @@ Hookup is a premium, privacy-first dating platform built around a Chooser vs. Be
 ## Run locally
 
 ```bash
-cd frontend
 npm install
 npm run dev
 ```
