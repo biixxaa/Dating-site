@@ -4,10 +4,11 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Dating-site/',
+  base: process.env.VITE_BASE_PATH || (process.env.GITHUB_ACTIONS ? '/Dating-site/' : '/'),
   plugins: [
     react(),
     tailwindcss(),
   ],
 })
+
 

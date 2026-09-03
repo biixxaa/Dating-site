@@ -118,7 +118,7 @@ function App() {
   )
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className={`min-h-screen relative overflow-hidden transition-colors duration-500 ${isDark ? 'bg-slate-950 text-slate-100' : 'bg-slate-50 text-slate-900'}`}>
         {/* Background decorative glow blobs */}
         <div className="absolute top-[-20%] left-[-10%] w-[60vw] h-[60vw] max-w-[600px] max-h-[600px] rounded-full bg-fuchsia-500/10 dark:bg-fuchsia-500/[0.07] blur-[100px] sm:blur-[130px] pointer-events-none select-none" />
