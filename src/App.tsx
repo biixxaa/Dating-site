@@ -17,7 +17,7 @@ function App() {
   })
   const [role, setRole] = useState<Role>(() => (localStorage.getItem('role') as Role) || 'chooser')
   const [isAuthenticated, setIsAuthenticated] = useState(() => localStorage.getItem('isAuthenticated') === 'true')
-  const [userName, setUserName] = useState(() => localStorage.getItem('userName') || '')
+  const [_userName, setUserName] = useState(() => localStorage.getItem('userName') || '')
   const [gender, setGender] = useState(() => localStorage.getItem('gender') || '')
   const [activeChatId, setActiveChatId] = useState<string | null>(null)
 
@@ -114,7 +114,7 @@ function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     ),
-    [userName, role, activeChatId, isAuthenticated]
+    [role, activeChatId, isAuthenticated]
   )
 
   return (
